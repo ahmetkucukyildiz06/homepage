@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>LikeMuShoes</h1>
+      <p>
+        Gently used floor model sneakers and discontinued styles at our lowest
+        prices of the year. Get 'em before they're gone!
+      </p>
+    </header>
+
+    <main>
+      <section>
+        
+        <form action="/submit" method="post">
+          <label for="first-name">First Name:</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="First Name"
+            required
+          />
+          <label for="last-name">Last Name:</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Last Name"
+            required
+          />
+          <p>What's your favorite shoes?</p>
+          <label>
+            <input type="radio" name="favorite-shoes" value="Converse" />
+            Converse
+          </label>
+          <label>
+            <input type="radio" name="favorite-shoes" value="Adidas" /> Adidas
+          </label>
+          <label>
+            <input type="radio" name="favorite-shoes" value="New Balance" /> New
+            Balance
+          </label>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <article>
+        <h2>Converse</h2>
+        <img
+          src="https://images.unsplash.com/photo-1463100099107-aa0980c362e6?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="converse shoes"
+        />
+        <p>Photo by Maksim Larin</p>
+        <p>
+          Suede fabric pointed toe stylish cut front low heel sharp on-trend toe
+          point raised heel drop sides unique silhouette.
+        </p>
+        <p><strong>$30 USD</strong></p>
+        <p><strong>Free Shipping!</strong></p>
+        <form action="#" method="post">
+          <label for="size">Size:</label>
+          <select id="size" name="size" required>
+            <option value=""></option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+          </select>
+          <label for="color">Color:</label>
+          <select id="color" name="color" required>
+            <option value=""></option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="red">Red</option>
+          </select>
+          <label for="quantity">Quantity:</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="5"
+            required
+          />
+          <button type="submit">Add to Cart</button>
+        </form>
+      </article>
+
+      <article>
+        <h3>New Balance</h3>
+        <figure>
+          <img
+            src="https://d3nt9em9l1urz8.cloudfront.net/media/catalog/product/cache/6/image/1100x/040ec09b1e35df139433887a97daa66f/n/b/nbms327wr_2.jpg"
+            alt="New Balance Men 327 MS327WR (white / munsell white / pigment / team red)"
+            width="200"
+          />
+          <figcaption>
+            New Balance Men 327 MS327WR (white / munsell white / pigment / team
+            red)
+          </figcaption>
+        </figure>
+
+        <p>
+          Suede fabric pointed toe stylish cut front lowheel sharp on-trend toe
+          point raised heeldrop sides unique silhouette
+        </p>
+        <p>$30</p>
+        <p>Free Shipping!</p>
+
+        <form action="/order">
+          <label for="size">Size</label>
+          <select name="size" id="size">
+            <option value=""></option>
+            <option value="37">37</option>
+            <option value="38" disabled>38</option>
+            <option value="39" disabled>39</option>
+            <option value="40" disabled>40</option>
+            <option value="41" disabled>41</option>
+            <option value="42" disabled>42</option>
+          </select>
+
+          <label for="color">Size</label>
+          <select name="color" id="color">
+            <option value=""></option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="black">black</option>
+            <option value="grey">grey</option>
+            <option value="green">green</option>
+            <option value="white">white</option>
+          </select>
+
+          <label for="quantity">Size</label>
+          <select name="quantity" id="quantity">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <button>Submit</button>
+        </form>
+      </article>
+
+      <br />
+      <br />
+      <br />
+    </main>
+    <footer>
+      <a href="/home">Home</a>
+      <a href="/About">About</a>
+      <a href="/Contact">Contact</a>
+    </footer>
+  </body>
+</html>
